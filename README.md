@@ -34,7 +34,7 @@ vercel
 
 ## Antes de publicar, ajuste:
 
-1. **Fotos**: troque os dois placeholders listrados (`.img-placeholder` em `app/page.js`, seções Hero e Sobre) por `<Image>` do `next/image` apontando para as fotos reais em `/public`.
+1. **Fotos**: o código já espera `public/hero.jpg` e `public/sobre.jpg` — basta colocar essas duas fotos dentro da pasta `public/` (mesmo nome de arquivo).
 2. **Domínio real**: troque `SEU-DOMINIO.com` em `app/layout.js`, `app/robots.js` e `app/sitemap.js` pelo domínio definitivo.
 3. **Número de WhatsApp**: já configurado como `5519988303000` (constante `WHATSAPP_NUMBER` em `app/page.js`) — altere se necessário.
 4. **Favicon**: adicione um `app/icon.png` (ou `.ico`) — o Next.js o usa automaticamente.

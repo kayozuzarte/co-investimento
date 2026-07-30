@@ -1,7 +1,7 @@
-import Image from 'next/image';
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const WHATSAPP_NUMBER = '5519988303000';
 
@@ -35,9 +35,9 @@ function OptionBox({ label, selected, onClick, kind }) {
   return (
     <div className={`option-box${selected ? ' selected' : ''}`} onClick={onClick}>
       {kind === 'check' ? (
-        <Image src="/hero.jpg" alt="Kayo Zuzarte" fill style={{objectFit:'cover'}} />
+        <div className="check-box"><div className="check-inner" /></div>
       ) : (
-        <Image src="/sobre.jpg" alt="Kayo Zuzarte" fill style={{objectFit:'cover'}} />
+        <div className="radio-dot"><div className="radio-dot-inner" /></div>
       )}
       <div className="option-label">{label}</div>
     </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
           <a href="#form" className="cta-btn">QUERO MINHA PRIMEIRA CONVERSA <span>→</span></a>
         </div>
         <div className="hero-right">
-          <div className="img-placeholder"><span>FOTO: retrato profissional de Kayo Zuzarte</span></div>
+          <Image src="/hero.jpg" alt="Kayo Zuzarte, assessor de investimentos" fill style={{ objectFit: 'cover' }} priority />
           <div className="hero-fade" />
         </div>
       </section>
@@ -197,7 +197,7 @@ export default function HomePage() {
           <div className="sobre-photo-wrap">
             <div className="sobre-photo-frame" />
             <div className="sobre-photo-box">
-              <div className="img-placeholder"><span>FOTO: Kayo Zuzarte à mesa</span></div>
+              <Image src="/sobre.jpg" alt="Kayo Zuzarte à mesa" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
           <div>
