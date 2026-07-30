@@ -1,3 +1,4 @@
+import Image from 'next/image';
 'use client';
 
 import { useState } from 'react';
@@ -34,9 +35,9 @@ function OptionBox({ label, selected, onClick, kind }) {
   return (
     <div className={`option-box${selected ? ' selected' : ''}`} onClick={onClick}>
       {kind === 'check' ? (
-        <div className="check-box"><div className="check-inner" /></div>
+        <Image src="/hero.jpg" alt="Kayo Zuzarte" fill style={{objectFit:'cover'}} />
       ) : (
-        <div className="radio-dot"><div className="radio-dot-inner" /></div>
+        <Image src="/sobre.jpg" alt="Kayo Zuzarte" fill style={{objectFit:'cover'}} />
       )}
       <div className="option-label">{label}</div>
     </div>
