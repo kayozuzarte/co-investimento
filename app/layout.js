@@ -16,7 +16,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const SITE_URL = 'https://SEU-DOMINIO.com';
+const SITE_URL = 'https://kayozuzarte.com.br';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
